@@ -1,0 +1,25 @@
+.mission {
+  padding-top: 90px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  text-align: center;
+  width: 690px;
+  padding-top: 30px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.wrapper__video {
+  padding-top: 45px;
+}
+
+.video {
+  width: 1255px;
+  height: 705px;
+  border-radius: 20px;
+}

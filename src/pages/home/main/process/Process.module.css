@@ -1,0 +1,58 @@
+.process {
+  padding-top: 80px;
+}
+
+.wrapper__cards {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.card {
+  width: 260px;
+  height: 430px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
+}
+
+.wrapper__text {
+  padding: 15px;
+}
+
+.title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.number {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.name {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.name::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #cccccc;
+}
+
+.text {
+  padding-top: 10px;
+  color: var(--text-color);
+}

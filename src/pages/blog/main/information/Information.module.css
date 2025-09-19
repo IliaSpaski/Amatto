@@ -1,0 +1,71 @@
+.information {
+  padding-top: 50px;
+}
+
+.wrapper__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  padding-top: 65px;
+  display: flex;
+  gap: 85px;
+}
+
+.text {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.description {
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper__text {
+  width: 830px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.slider__wrapper {
+  margin-top: 65px;
+  border-radius: 10px;
+}
+
+.slider {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  z-index: 0;
+  padding: 65px 0px;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+.slide > * {
+  position: relative;
+  z-index: 2;
+}
+.slide {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

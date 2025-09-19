@@ -1,0 +1,23 @@
+.cases {
+  padding-top: 90px;
+}
+.cases__card {
+  padding-top: 55px;
+}
+.plug {
+  width: 460px;
+  height: 265px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+.wrapper__video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.video {
+  width: 460px;
+  height: 265px;
+  border-radius: 10px;
+}

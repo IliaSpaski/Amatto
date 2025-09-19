@@ -1,0 +1,30 @@
+.hero {
+  background-image: url("/public/blog/hero/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+.title {
+  position: relative;
+  padding-top: 150px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  max-width: 1000px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  z-index: 10;
+}

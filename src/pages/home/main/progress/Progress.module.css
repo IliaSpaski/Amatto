@@ -1,0 +1,88 @@
+.progress {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_cards {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 470px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.title__card {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #fff;
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.inner {
+  display: flex;
+  gap: 120px;
+}
+.text {
+  padding: 5px 30px 5px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0 10px 10px 0;
+}
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.value {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 600;
+}
+.currency {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.circs {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+  opacity: 0;
+  background: none;
+  cursor: pointer;
+}
+.card:hover .button {
+  opacity: 1;
+}
+
+.button__more {
+  margin-top: 60px;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 15px 80px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.button__more:hover {
+  background-color: #ffd445;
+}

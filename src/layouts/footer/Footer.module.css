@@ -1,0 +1,95 @@
+.footer {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+.logo {
+  width: 250px;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  flex-wrap: wrap;
+}
+.social {
+  padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.navigation {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.link {
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  height: 2px;
+  bottom: -5px;
+  background-color: var(--primary-color);
+  transition: 300ms;
+}
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+.wrapper__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 55px 140px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-family: "Playfair Display";
+
+  font-weight: 700;
+  color: var(--text-color);
+}
+.card__title::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 3px;
+}
+
+.wrapper__text {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--text-color);
+}
+
+.card__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 15px;
+  color: var(--text-color);
+}
