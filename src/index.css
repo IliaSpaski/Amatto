@@ -44,7 +44,7 @@ u {
   bottom: -15px;
   height: 5px;
   width: 100px;
-  background-color: var(--primary-color);
+  background-color: #ffcc29;
 }
 .popup {
   position: absolute;
