@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+   z-index: 1;
+   position: relative;
 }
 
 .inner {
@@ -12,6 +14,11 @@
   text-align: center;
   grid-column: 2;
 }
+
+
+
+
+
 
 .title {
   color: var(--primary-color);
@@ -39,4 +46,51 @@
 }
 .button:hover {
   background-color: #ffd445;
+}
+@media (max-width:1400px) {
+  .inner {
+  padding-top: 20px;}
+
+ .order::before {
+  background-color: rgba(0, 0, 0, 0.437);
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.order {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.subtitle {
+  color:rgb(255, 255, 255);
+}
+
+.text {
+  color:rgb(255, 255, 255);
+}
+
+}
+
+@media (max-width:769px) {
+  .inner {
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 55px;
+}
+
+.subtitle {
+  padding-top: 50px;
+  font-size: 28px;
+}
 }

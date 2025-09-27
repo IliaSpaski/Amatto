@@ -86,3 +86,11 @@
 .button__more:hover {
   background-color: #ffd445;
 }
+
+
+@media (max-width: 769px) {
+.inner {
+  display: flex;
+  gap: 50px;
+}
+}

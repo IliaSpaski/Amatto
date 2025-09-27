@@ -39,6 +39,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+      flex-wrap: wrap;
 }
 
 .input {
@@ -61,4 +62,19 @@
 
 .button:hover {
   background-color: #4b494d;
+}
+
+
+@media (max-width: 769px) {
+  .text {
+    margin: 10px;
+  padding: 40px 0 40px 0;
+  max-width: 790px;
+}
+.title {
+  font-size: 33px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  color: var(--text-color);
+}
 }

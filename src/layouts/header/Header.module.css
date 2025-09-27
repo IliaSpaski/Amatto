@@ -11,12 +11,20 @@
   display: flex;
   align-items: center;
   gap: 175px;
+  padding-left: 30px;
 }
 .list {
   display: flex;
   align-items: center;
   gap: 70px;
 }
+
+
+@media (max-width: 1400px) {
+  .list {
+  gap: 3vw;
+}
+};
 
 .list__link {
   color: var(--text-color);
@@ -48,6 +56,13 @@
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 1400px) {
+  .interaction {
+  padding-left: 5px;
+}
+}
+
 .interaction__button {
   font-size: 18px;
   font-weight: 500;
@@ -56,7 +71,11 @@
   padding: 15px 45px;
   border-radius: 40px;
   cursor: pointer;
+  min-width: 230px;
+    height: 51px;
 }
+
+
 
 .interaction__button:hover {
   background-color: #ffd445;
@@ -103,7 +122,7 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .list {
     display: none;
     flex-direction: column;
@@ -148,8 +167,10 @@
 }
 
 /* Десктоп: меню всегда видно, бургер скрыт */
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   .burger__button {
     display: none;
   }
 }
+
+

@@ -8,7 +8,7 @@ export const Application = () => {
         <h2 className="title">Покупай в рассрочку!</h2>
         <div className={s.inner}>
           <Request />
-          <img src="/public/home/application/background.png" alt="" />
+          <div className={s.inner__img}><img src="/public/home/application/background.png" alt="" /></div>
         </div>
       </div>
     </div>

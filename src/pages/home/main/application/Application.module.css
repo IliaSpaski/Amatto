@@ -5,7 +5,17 @@
   padding-top: 60px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+@media (max-width: 1400px) {
+  .inner__img {
+  display: none;
+}
+}
+
+
+
 .request {
   width: 650px;
   height: 650px;
@@ -90,6 +100,7 @@
 
 .form__payload {
   padding-top: 30px;
+
 }
 
 .payload__inputs {
@@ -109,4 +120,55 @@
 
 .button:hover {
   background-color: #ffd445;
+}
+
+@media (max-width: 769px) {
+
+  .request {
+  /* width: 650px; */
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.subtitle__request {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.text {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.form {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.form__payload {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calculate {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.separator {
+  margin-top: 35px;
+  padding: 15px 35px;
+  flex-wrap: wrap;
+}
+
+.payload__inputs {
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 15px 70px;
+}
 }

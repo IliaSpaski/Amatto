@@ -10,6 +10,7 @@
   align-items: center;
   gap: 180px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .social {
   padding-top: 35px;
@@ -53,6 +54,12 @@
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   gap: 55px 140px;
+}
+
+@media (max-width: 1400px) {
+.wrapper__card {
+  grid-template-columns: none;
+}
 }
 
 .card__title {

@@ -8,7 +8,7 @@
 }
 .text {
   text-align: center;
-  width: 690px;
+  max-width: 690px;
   padding-top: 30px;
   font-size: 20px;
   color: var(--text-color);
@@ -16,10 +16,22 @@
 
 .wrapper__video {
   padding-top: 45px;
+  width: 100%;
+  display: flex;
+    justify-content: center;
 }
 
 .video {
-  width: 1255px;
+  width: 80%;
   height: 705px;
   border-radius: 20px;
+}
+
+
+@media (max-width: 769px) {
+  .video {
+  width: 90%;
+  height: 40vh;
+  border-radius: 20px;
+}
 }

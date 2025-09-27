@@ -77,3 +77,13 @@
 .button:hover {
   background-color: #ffd445;
 }
+
+@media (max-width: 769px) {
+  .title{
+    font-size:50px;
+    text-align: center;
+  }
+  .subtitle {
+ padding: 10px;
+}
+}
